@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ggj.dao.ResumeMapper">
+    <select id="getAllResume" resultType="resume">
+        SELECT * from t_resume
+    </select>
+
+    <select id="getResumes" parameterType="int" resultType="resume">
+        select * from t_resume where R_UID = #{id}
+    </select>
+
+    <select id="getResume" parameterType="int" resultType="resume">
+        SELECT * from t_resume where r_id = #{r_id}
+    </select>
+
+    <insert id="saveResume" parameterType="resume">
+        insert into t_resume VALUES (
+        resume_seq.nextval,#{r_birth},#{r_address},#{r_name},#{r_gender},#{r_school},
+        #{r_education},#{r_phone},#{r_email},#{r_describe},#{r_case},
+        #{r_appraise},#{r_uid}
+        )
+    </insert>
+
+    <update id="updateResume" parameterType="resume">
+        UPDATE t_resume set _birth=#{r_birth},r_address = #{r_address},r_name =#{r_name},r_gender=#{r_gender},r_school=#{r_school},
+        r_education=#{r_education},r_phone=#{r_phone},r_email=#{r_email},r_describe=#{r_describe},r_case=#{r_case},
+        r_appraise=#{r_appraise},r_uid=#{r_uid} where r_id = #{r_id}
+    </update>
+
+    <delete id="deleteResume" parameterType="int">
+        delete from t_resume where r_id = #{r_id}
+    </delete>
+</mapper>

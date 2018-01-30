@@ -53,14 +53,11 @@
     </style>
 </head>
 <body>
-<a href="jumptoadminLogin">管理员登录
-</a>
 <div>
-    <form action="login" method="post">
-        <input name="u_name" placeholder="帐号" class="inp"><br><br>
-        <input type="password" name="u_pass" placeholder="密码" class="inp"><br><br>
+    <form action="adminLogin" method="post">
+        <input name="name" placeholder="帐号" class="inp"><br><br>
+        <input type="password" name="pass" placeholder="密码" class="inp"><br><br>
         <input type="submit" value="登录" class="inp" id="inp1"><br><br>
-        <a href="jumptoRegest">注&nbsp;&nbsp;&nbsp;&nbsp;册</a>
     </form>
 </div>
 </body>

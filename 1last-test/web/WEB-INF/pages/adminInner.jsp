@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2018/1/29
-  Time: 15:01
+  Date: 2018/1/30
+  Time: 15:02
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -28,9 +28,11 @@
     </style>
 </head>
 <body>
-<li><a href="jumpresume">我的简历</a></li>
-<li><a></a></li>
-<li><a></a></li>
+<ol>
+    <li><a>增加部门</a></li>
+    <li><a>增加职位</a></li>
+    <li><a></a></li>
+</ol>
 </body>
 </html>
 

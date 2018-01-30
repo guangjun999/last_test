@@ -7,18 +7,18 @@
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
         <property name="url" value="jdbc:oracle:thin:@//localhost:1521/XE"/>
-        <property name="username" value="com.ggj"/>
-        <property name="password" value="com.ggj"/>
+        <property name="username" value="ggj"/>
+        <property name="password" value="ggj"/>
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="typeAliasesPackage" value="com.com.ggj.model"/>
-        <property name="mapperLocations" value="classpath:com/com.ggj/dao/*.xml"/>
+        <property name="typeAliasesPackage" value="com.ggj.model"/>
+        <property name="mapperLocations" value="classpath:com/ggj/dao/*.xml"/>
     </bean>
 
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.com.ggj.dao."/>
+        <property name="basePackage" value="com.ggj.dao."/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
@@ -35,7 +35,7 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="pc" expression="execution(* com.ggj.service.*.*(..))"/>
+        <aop:pointcut id="pc" expression="execution(* com.ggj.service.impl.*.*(..))"/>
         <aop:advisor advice-ref="interceptor" pointcut-ref="pc"/>
     </aop:config>
 </beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ggj.dao.DeptMapper">
+    <select id="getDept" parameterType="dept" resultType="dept">
+        select * from t_dept where d_id = #{d_id}
+    </select>
+
+    <select id="getAllDepts" resultType="dept">
+        select * from t_dept
+    </select>
+
+    <insert id="saveDept" parameterType="dept">
+        INSERT into t_tdept VALUES (dept_seq.nextval,#{d_name})
+    </insert>
+
+    <update id="updateDept" parameterType="dept">
+        UPDATE t_dept set d_name = #{d_name} where d_id = #{d_id}
+    </update>
+
+    <delete id="deleteDept" parameterType="dept">
+        delete from t_dept where d_id = #{d_id}
+    </delete>
+</mapper>

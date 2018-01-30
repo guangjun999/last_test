@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Oracle - @localhost" uuid="0c238688-a22e-40fc-b985-90c04e1625d3">
+    <database-info product="Oracle" version="Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+      <extra-name-characters>$#</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="ORACLE" format-version="2.5">
+      <schema id="1" name="GGJ">
+        <object-id>50</object-id>
+        <created-timestamp>2018-01-29.10:43:24</created-timestamp>
+        <modified-timestamp>2018-01-30.12:56:23</modified-timestamp>
+        <introspection-timestamp>2018-01-30.13:42:49</introspection-timestamp>
+      </schema>
+      <sequence id="2" parent="1" name="DEPT_SEQ">
+        <object-id>20234</object-id>
+        <created-timestamp>2018-01-30.12:55:54</created-timestamp>
+        <modified-timestamp>2018-01-30.12:55:54</modified-timestamp>
+        <min-value>1</min-value>
+        <max-value>99999999</max-value>
+        <increment-by>1</increment-by>
+        <next-value>1</next-value>
+        <cache-size>-2147483648</cache-size>
+      </sequence>
+      <sequence id="3" parent="1" name="EMP_SEQ">
+        <object-id>20233</object-id>
+        <created-timestamp>2018-01-30.12:55:44</created-timestamp>
+        <modified-timestamp>2018-01-30.12:55:44</modified-timestamp>
+        <min-value>1</min-value>
+        <max-value>99999999</max-value>
+        <increment-by>1</increment-by>
+        <next-value>1</next-value>
+        <cache-size>-2147483648</cache-size>
+      </sequence>
+      <sequence id="4" parent="1" name="INVITE_SEQ">
+        <object-id>20235</object-id>
+        <created-timestamp>2018-01-30.12:56:07</created-timestamp>
+        <modified-timestamp>2018-01-30.12:56:07</modified-timestamp>
+        <min-value>1</min-value>
+        <max-value>99999999</max-value>
+        <increment-by>1</increment-by>
+        <next-value>1</next-value>
+        <cache-size>-2147483648</cache-size>
+      </sequence>
+      <sequence id="5" parent="1" name="JOB_SEQ">
+        <object-id>20236</object-id>
+        <created-timestamp>2018-01-30.12:56:14</created-timestamp>
+        <modified-timestamp>2018-01-30.12:56:14</modified-timestamp>
+        <min-value>1</min-value>
+        <max-value>99999999</max-value>
+        <increment-by>1</increment-by>
+        <next-value>1</next-value>
+        <cache-size>-2147483648</cache-size>
+      </sequence>
+      <sequence id="6" parent="1" name="RESUME_SEQ">
+        <object-id>20218</object-id>
+        <created-timestamp>2018-01-29.19:09:44</created-timestamp>
+        <modified-timestamp>2018-01-29.19:09:44</modified-timestamp>
+        <min-value>1</min-value>
+        <max-value>999999999</max-value>
+        <increment-by>1</increment-by>
+        <next-value>1</next-value>
+        <cache-size>-2147483648</cache-size>
+      </sequence>
+      <sequence id="7" parent="1" name="USER_SEQ">
+        <object-id>20215</object-id>
+        <created-timestamp>2018-01-29.10:45:21</created-timestamp>
+        <modified-timestamp>2018-01-29.10:45:21</modified-timestamp>
+        <min-value>1</min-value>
+        <max-value>999999999</max-value>
+        <increment-by>1</increment-by>
+        <next-value>2</next-value>
+        <cache-size>-2147483648</cache-size>
+      </sequence>
+      <sequence id="8" parent="1" name="WANT_SEQ">
+        <object-id>20237</object-id>
+        <created-timestamp>2018-01-30.12:56:23</created-timestamp>
+        <modified-timestamp>2018-01-30.12:56:23</modified-timestamp>
+        <min-value>1</min-value>
+        <max-value>99999999</max-value>
+        <increment-by>1</increment-by>
+        <next-value>1</next-value>
+        <cache-size>-2147483648</cache-size>
+      </sequence>
+      <table id="9" parent="1" name="EMP">
+        <object-id>20227</object-id>
+        <created-timestamp>2018-01-30.11:36:16</created-timestamp>
+        <modified-timestamp>2018-01-30.12:49:51</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="10" parent="1" name="T_DEPT">
+        <object-id>20223</object-id>
+        <created-timestamp>2018-01-30.11:26:27</created-timestamp>
+        <modified-timestamp>2018-01-30.11:26:27</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="11" parent="1" name="T_INVITE">
+        <object-id>20229</object-id>
+        <created-timestamp>2018-01-30.12:31:27</created-timestamp>
+        <modified-timestamp>2018-01-30.12:31:27</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="12" parent="1" name="T_JOB">
+        <object-id>20225</object-id>
+        <created-timestamp>2018-01-30.11:30:57</created-timestamp>
+        <modified-timestamp>2018-01-30.11:37:27</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="13" parent="1" name="T_RESUME">
+        <object-id>20216</object-id>
+        <created-timestamp>2018-01-29.18:44:43</created-timestamp>
+        <modified-timestamp>2018-01-30.10:23:04</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="14" parent="1" name="T_USER">
+        <object-id>20213</object-id>
+        <created-timestamp>2018-01-29.10:43:24</created-timestamp>
+        <modified-timestamp>2018-01-29.10:43:24</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="15" parent="1" name="T_WANT">
+        <object-id>20231</object-id>
+        <created-timestamp>2018-01-30.12:54:36</created-timestamp>
+        <modified-timestamp>2018-01-30.12:54:36</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <column id="16" parent="9" name="E_ID">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <column id="17" parent="9" name="E_UID">
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <column id="18" parent="9" name="E_JID">
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="19" parent="9" name="E_DID">
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="20" parent="9" name="E_JOIN">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="21" parent="9" name="E_SALARY">
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <column id="22" parent="9" name="E_CONN">
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <index id="23" parent="9" name="SYS_C007033">
+        <name-surrogate>1</name-surrogate>
+        <object-id>20228</object-id>
+        <created-timestamp>2018-01-30.11:36:16</created-timestamp>
+        <modified-timestamp>2018-01-30.11:36:16</modified-timestamp>
+        <columns>E_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>SYSTEM</tablespace-name>
+      </index>
+      <key id="24" parent="9" name="SYS_C007033">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2018-01-30.11:36:16</modified-timestamp>
+        <columns>E_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C007033</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="10" name="D_ID">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="26" parent="10" name="D_NAME">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <index id="27" parent="10" name="SYS_C007029">
+        <name-surrogate>1</name-surrogate>
+        <object-id>20224</object-id>
+        <created-timestamp>2018-01-30.11:26:28</created-timestamp>
+        <modified-timestamp>2018-01-30.11:26:28</modified-timestamp>
+        <columns>D_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>SYSTEM</tablespace-name>
+      </index>
+      <key id="28" parent="10" name="SYS_C007029">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2018-01-30.11:26:28</modified-timestamp>
+        <columns>D_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C007029</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="29" parent="11" name="I_ID">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <column id="30" parent="11" name="I_JID">
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="31" parent="11" name="I_DID">
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <index id="32" parent="11" name="SYS_C007035">
+        <name-surrogate>1</name-surrogate>
+        <object-id>20230</object-id>
+        <created-timestamp>2018-01-30.12:31:27</created-timestamp>
+        <modified-timestamp>2018-01-30.12:31:27</modified-timestamp>
+        <columns>I_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>SYSTEM</tablespace-name>
+      </index>
+      <key id="33" parent="11" name="SYS_C007035">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2018-01-30.12:31:27</modified-timestamp>
+        <columns>I_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C007035</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="12" name="J_ID">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="35" parent="12" name="J_NAME">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="36" parent="12" name="J_DID">
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="37" parent="12" name="J_DESCRIBE">
+        <data-type>VARCHAR2(500)</data-type>
+      </column>
+      <column id="38" parent="13" name="r_id">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <column id="39" parent="13" name="r_birth">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="40" parent="13" name="r_address">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="41" parent="13" name="r_name">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="42" parent="13" name="r_gender">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="43" parent="13" name="r_school">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="44" parent="13" name="r_education">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="45" parent="13" name="r_phone">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="46" parent="13" name="r_email">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="47" parent="13" name="r_describe">
+        <data-type>VARCHAR2(500)</data-type>
+      </column>
+      <column id="48" parent="13" name="r_case">
+        <data-type>VARCHAR2(500)</data-type>
+      </column>
+      <column id="49" parent="13" name="r_appraise">
+        <data-type>VARCHAR2(500)</data-type>
+      </column>
+      <column id="50" parent="13" name="r_uid">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <index id="51" parent="13" name="SYS_C007026">
+        <name-surrogate>1</name-surrogate>
+        <object-id>20217</object-id>
+        <created-timestamp>2018-01-29.18:44:44</created-timestamp>
+        <modified-timestamp>2018-01-29.18:44:44</modified-timestamp>
+        <columns>r_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>SYSTEM</tablespace-name>
+      </index>
+      <key id="52" parent="13" name="SYS_C007026">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2018-01-29.18:44:44</modified-timestamp>
+        <columns>r_id</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C007026</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="53" parent="14" name="U_ID">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(9)</data-type>
+      </column>
+      <column id="54" parent="14" name="U_NAME">
+        <data-type>VARCHAR2(20)</data-type>
+      </column>
+      <column id="55" parent="14" name="U_PASS">
+        <data-type>VARCHAR2(20)</data-type>
+      </column>
+      <index id="56" parent="14" name="SYS_C007024">
+        <name-surrogate>1</name-surrogate>
+        <object-id>20214</object-id>
+        <created-timestamp>2018-01-29.10:43:24</created-timestamp>
+        <modified-timestamp>2018-01-29.10:43:24</modified-timestamp>
+        <columns>U_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>SYSTEM</tablespace-name>
+      </index>
+      <key id="57" parent="14" name="SYS_C007024">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2018-01-29.10:43:24</modified-timestamp>
+        <columns>U_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C007024</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="15" name="W_ID">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <column id="59" parent="15" name="W_UID">
+        <data-type>NUMBER(8)</data-type>
+      </column>
+      <column id="60" parent="15" name="W_JID">
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="61" parent="15" name="W_DID">
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="62" parent="15" name="W_STATE">
+        <data-type>NUMBER(2)</data-type>
+      </column>
+      <index id="63" parent="15" name="SYS_C007037">
+        <name-surrogate>1</name-surrogate>
+        <object-id>20232</object-id>
+        <created-timestamp>2018-01-30.12:54:36</created-timestamp>
+        <modified-timestamp>2018-01-30.12:54:36</modified-timestamp>
+        <columns>W_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>SYSTEM</tablespace-name>
+      </index>
+      <key id="64" parent="15" name="SYS_C007037">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2018-01-30.12:54:36</modified-timestamp>
+        <columns>W_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C007037</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

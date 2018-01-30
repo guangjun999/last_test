@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ggj.dao.JobMapper">
+   <select id="getJob" parameterType="job" resultType="job">
+      SELECT * from t_job where j_id = #{job.j_id}
+   </select>
+
+    <select id="getJobByDept" parameterType="dept" resultType="job">
+      SELECT * from t_job where j_did = #{dept.d_id}
+   </select>
+
+    <insert id="saveJob" parameterType="job">
+        insert into t_job values (job_seq.nextval,#{j_name},#{j_did},#{j_describe})
+    </insert>
+
+    <update id="updateJob" parameterType="job">
+        UPDATE t_job set j_name = #{j_name},j_did = #{j_did},j_describe = #{j_describe} where j_id = #{j_id}
+    </update>
+
+    <delete id="deleteJob" parameterType="job">
+        DELETE  from t_job where j_id = #{j_id}
+    </delete>
+</mapper>
