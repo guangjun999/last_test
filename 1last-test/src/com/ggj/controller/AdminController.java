@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by Administrator on 2018/1/30.
@@ -39,4 +40,15 @@ public class AdminController {
             return "../../index";
         }
     }
+
+    @RequestMapping("/jumptodeptInner")
+    public String jumptodeptInner() throws Exception{
+        return "deptInner";
+    }
+
+    @RequestMapping("/makeDept")
+    public String makeDept(String d_name, HttpSession session) throws Exception{
+        return "makeDept";
+    }
+
 }

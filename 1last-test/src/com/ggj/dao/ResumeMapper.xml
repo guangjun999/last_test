@@ -22,7 +22,7 @@
     </insert>
 
     <update id="updateResume" parameterType="resume">
-        UPDATE t_resume set _birth=#{r_birth},r_address = #{r_address},r_name =#{r_name},r_gender=#{r_gender},r_school=#{r_school},
+        UPDATE t_resume set r_birth=#{r_birth},r_address = #{r_address},r_name =#{r_name},r_gender=#{r_gender},r_school=#{r_school},
         r_education=#{r_education},r_phone=#{r_phone},r_email=#{r_email},r_describe=#{r_describe},r_case=#{r_case},
         r_appraise=#{r_appraise},r_uid=#{r_uid} where r_id = #{r_id}
     </update>

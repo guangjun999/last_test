@@ -27,13 +27,14 @@
             color: tomato;
         }
     </style>
+    <script src="js/jquery-3.1.0.js"></script>
     <script>
        $(function () {
-           $("#a1").click(function () {
+           $("#aaa").click(function () {
                $.ajax({
                    type:"get",
                    url:"checkResumeNum",
-                   data:"",
+                   data:"name=1",
                    success:function (data) {
                        var a = data.length;
                        if (a!=1){
@@ -44,12 +45,13 @@
                    }
            })
        })
+       })
     </script>
 </head>
 <body>
 <ol>
     <li><a>返回</a></li>
-    <li><a id="a1">创建简历</a></li>
+    <li><a id="aaa">创建简历</a></li>
 
 </ol>
 <c:if test="${sessionScope.resume.r_id>0}">

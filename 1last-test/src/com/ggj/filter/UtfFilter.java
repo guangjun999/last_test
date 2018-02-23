@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * Created by Administrator on 2018/1/29.
  */
-@WebFilter(filterName = "UtfFilter")
+@WebFilter(filterName = "UtfFilter", urlPatterns = "/*")
 public class UtfFilter implements Filter {
     public void destroy() {
     }

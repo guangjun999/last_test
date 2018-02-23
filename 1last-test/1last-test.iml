@@ -48,5 +48,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="jQuery" level="application" />
+    <orderEntry type="library" name="jQuery 1.0." level="project" />
   </component>
 </module>

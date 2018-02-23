@@ -56,7 +56,7 @@ public class UserController {
     @RequestMapping("/jumpresume")
     public String resume(HttpSession session)throws Exception{
         User user = (User) session.getAttribute("user");
-        System.out.println(user.getU_id());
+        //System.out.println(user.getU_id());
         Resume resume = resumeService.getResumes(user.getU_id());
         session.setAttribute("resume",resume);
         return "resume";
@@ -80,8 +80,9 @@ public class UserController {
     @RequestMapping("/checkResumeNum")
     public void checkResumeNum(HttpSession session,HttpServletResponse response) throws Exception {
         User user = (User) session.getAttribute("user");
+       // System.out.println(user);
         Resume resume =resumeService.getResumes(user.getU_id());
-        System.out.println(resume.getR_address());
+       // System.out.println(resume.getR_address());
         if (resume!=null){
             response.getWriter().print("1");
         }else {
